@@ -8,28 +8,30 @@ namespace GettingInput
     {
     
       {
+
+        Console.ForegroundColor = ConsoleColor.Yellow;
         Console.WriteLine("area, omkrets eller sektor");
      string calculator = Console.ReadLine();
         if (calculator == "omkrets")
         {
         Console.WriteLine("Skriv Diametern");
-      int numOne = Convert.ToInt32(Console.ReadLine());
+      int Diameter = Convert.ToInt32(Console.ReadLine());
 
-      double numTwo = 3.14;
+      double pi = 3.14;
 
       Console.WriteLine("Omkretsen blir");
-                        Console.WriteLine(numOne*numTwo);
+                        Console.WriteLine(Diameter*pi);
       }
         if (calculator == "area")
         {
           Console.WriteLine("Skriv Radien");
-          int numOne = 
+          int Radie = 
 Convert.ToInt32(Console.ReadLine());
             
-      double numTwo = 3.14;
+      double pi = 3.14;
       Console.WriteLine("Arean blir");
           
-         Console.WriteLine(numOne*numOne*numTwo);
+         Console.WriteLine(Radie*Radie*pi);
           
         }
         
@@ -39,14 +41,15 @@ Convert.ToInt32(Console.ReadLine());
           int Radie = 
 Convert.ToInt32(Console.ReadLine()); 
           Console.WriteLine("Skriv Vinkeln");
-          int vinkel = 
+          double vinkel = 
 Convert.ToInt32(Console.ReadLine());
-        int oneTurn = 360;    
+        double oneTurn = 360;    
       double pi = 3.14;
       Console.WriteLine("Arean blir");
        double angleThing = vinkel/oneTurn;
           double areaThing = Radie*Radie*pi;
-         Console.WriteLine(angleThing*areaThing);
+         double answer = angleThing*areaThing;
+          Console.WriteLine(answer);
          
           
         }
